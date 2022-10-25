@@ -6,6 +6,7 @@
   </head>
   <body id="page-top">
     <script>
+      // 1. Write a JS program to find the power of a number using for loop.
       let num = 5;
       let power = 3;
       let ans = num;
@@ -13,6 +14,48 @@
         ans *= num;
       }
       console.log(ans);
+
+      // 2. Write a JS program to create this pattern given a number.
+      // e.g. input is 8.
+
+      let x = 8;
+      let z = 1;
+      for (let i = 2; i <= x + 1; i++) {
+        z += " ";
+        console.log(z);
+        z += " " + i;
+      }
+
+      // 4. Write a JS program to find N value in the Fibonacci series for a given number
+
+      let a = 0;
+      let b = 1;
+      let c = a;
+      let n = 3;
+      for (let i = 0; i <= n; i++) {
+        console.log(c);
+        c = a + b;
+        a = b;
+        b = c;
+      }
+
+      // 10. Write a JS program that will allow someone to guess a four-digit pin exactly 4 times. If the user guesses the number correctly, it prints “That was correct!” Otherwise, it will print “Sorry that was wrong.” The program stops after the 4th attempt regardless if they got it right or wrong. Consider the 4-digit PIN to be a variable.
+
+      let pin = 1234;
+      let attempt = 0;
+      let success = 0;
+      let inputPrompt = "";
+      do {
+        inputPrompt = parseInt(prompt("Enter code: "));
+        if (inputPrompt === pin) {
+          success = 1;
+          console.log("That was correct!");
+          attempt = 4;
+        } else {
+          console.log("Sorry that was wrong");
+        }
+        attempt++;
+      } while (attempt < 4 && success === 0);
     </script>
   </body>
 </html>
