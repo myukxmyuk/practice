@@ -15,3 +15,10 @@ buttonTwo.addEventListener("click", alertBtn);
 // buttonTwo.addEventListener("click", () => {
 //   alert("I also love Javascript");
 // });
+
+// Mouseover
+
+const newBackgroundColor = document.querySelector(".card-header");
+newBackgroundColor.addEventListener("mouseover", () => {
+  newBackgroundColor.style.backgroundColor = "blue";
+});
