@@ -1,5 +1,3 @@
-// factory is also called constructor
-
 // Factory Function
 
 function createCircle(radius) {
@@ -10,6 +8,17 @@ function createCircle(radius) {
     },
   };
 }
-
 const circle = createCircle(1);
-circle.draw();
+
+// Another way to create an object using constructor function
+
+// Constructor Function
+
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function () {
+    console.log("draw");
+  };
+}
+const another = new Circle(1); // creates an empty object like this {}
+another.draw();
