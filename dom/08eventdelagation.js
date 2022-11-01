@@ -14,7 +14,9 @@ const movie = document.querySelector("ul");
 const newMovie = document.createElement("li");
 
 newMovie.innerText = "Rugby";
+// newMovie.classList.add("list-items");
+// newMovie.classList.add("list-group-item");
+newMovie.className = "list-items list-group-item";
 newMovie.setAttribute("id", "rugby");
-newMovie.classList("list-items list-group-tem");
 
 movie.append(newMovie);
