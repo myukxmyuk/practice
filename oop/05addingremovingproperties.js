@@ -13,6 +13,11 @@ console.log(circle); // display all properties
 
 // Or we add a dynamic name of property like this
 
-const propertyName = "location";
+const propertyName = "center";
 circle[propertyName] = { x: 1 };
+console.log(circle); // display all properties
+
+// Deleting Property
+
+delete circle.location;
 console.log(circle); // display all properties
