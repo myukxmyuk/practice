@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-sm fixed-top bg-white">
@@ -45,38 +48,32 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
+              <a class="nav-link active" href="#gallery" id="gallery-btn">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Contact</a>
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="center text-center">myukxmyuk</div>
-    <div class="container">
+    <div class="container-fluid center text-center" id="main-content">
+      <p>Reymund 'myuk' Jumawan</p>
+    </div>
+    <div class="container" id="gallery">
       <div class="row">
-        <div class="col">
-          <img
-            src="assets/alex-voulgaris-BDHHKyd6Vig-unsplash.jpg"
-            class="img-port img-fluid"
-            alt="..."
-          />
-          <img
-            src="assets/dagmara-dombrovska-t-E_-R5MwOA-unsplash.jpg"
-            class="img-port img-fluid"
-            alt="..."
-          />
-        </div>
-        <div class="col">
+        <div class="col" id="image-list">
           <img
             src="assets/pexels-alessandro-avilés-renaldi-14176536.jpg"
-            class="img-port img-fluid"
-            alt="..."
-          />
-          <img
-            src="assets/pexels-céline-14208380.jpg"
             class="img-port img-fluid"
             alt="..."
           />
@@ -88,14 +85,121 @@
             alt="..."
           />
           <img
-            src="assets/raphael-wild-nJTKuybBpzs-unsplash.jpg"
+            src="assets/julia-matuzova-iB62CLrgqzU-unsplash.jpg"
+            class="img-port img-fluid"
+            alt="..."
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/pexels-daniel-sarmiento-13822091.jpg"
+            class="img-port img-fluid"
+            alt="..."
+          />
+          <img
+            src="assets/pexels-fidan-nazim-qizi-14014939.jpg"
             class="img-port img-fluid"
             alt="..."
           />
         </div>
       </div>
     </div>
-    <div class="container-fluid" id="footer"></div>
+    <div class="container-fluid" id="about">
+      <div class="container">
+        <div class="row" id="about-section">
+          <h2>About</h2>
+          <p>
+            I have a clear, logical mind with a practical approach to
+            problem-solving and a drive to see things through to completion. I
+            have more than 1 year of experience in managing and leading teams
+            across multiple sectors as customer service representative and team
+            captain. With a proven track-record in reporting analyst for more
+            than 4 years, I always strive for the highest standard possible, at
+            any given task and in any situation. I am eager to learn, I enjoy
+            overcoming challenges, and I have a genuine interest in that role
+            and making organisations successful.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="work">
+      <div class="container">
+        <div class="row">
+          <h2>Work</h2>
+          <div class="card-group">
+            <div class="card">
+              <img src="assets/programmer.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Web Developer</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  New Company in 2023 :)
+                </h6>                <p class="card-text">
+                  <ul>
+                    <li>Responsible in writing well designed, testable, efficient code by using best software development practices. </li>
+                    <li>Responsible in creating website layout/user interface by using standard HTML/CSS practices.</li>
+                    <li>Responsible of integrating data from various back-end services and databases.</li>
+                    <li>Responsible of gathering and refining specifications and requirements based on technical needs</li>
+                    <li>Responsible of creating and maintaining software documentation.</li>
+                    <li>Responsible of maintaining, expanding, and scaling our site</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">February 2023 - Present</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/report.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Reporting analyst</h5>
+
+                <h6 class="card-subtitle mb-2 text-muted">
+                  CONCENTRIX (FORMERLY CONVERGYS), August 2018 - February 2023
+                </h6>
+                <p class="card-text">
+                  <ul>
+                    <li>Responsible in analyzing and reporting current and past key
+                      metrics data. Responsible in measuring and tracking key
+                      metrics performance against plan/goal. </li>
+                    <li>Responsible in looking
+                      at current key metric performance and identifying trends and
+                      preparing reports to be communicated to the management.</li>
+                    <li>Responsible of helping teams, managers, senior managers, and
+                      site director by providing & communicating periodic reports.</li>
+                    <li>Responsible of performing ad-hoc analyses as needed.</li>
+                    <li>Responsible of developing, modifying, and recommending new
+                      reports.</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">August 2018 - PRESENT</small>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="education">
+      <div class="container">
+        <div class="row">
+          <h2>Education</h2>
+          <h3>La Salle University</h3>
+          <p>Bachelo of Science in Information Technology, June 2011 - November 2015</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="contact">
+      <div class="container text-center" id="contact-info">
+          <div class="col" id=""><div class="container">
+            <a href="https://www.facebook.com/reyjum2669" class="fa fa-facebook"></a>
+<a href="https://www.facebook.com/reyjum2669" class="fa fa-twitter"></a>
+<a href="https://www.facebook.com/reyjum2669" class="fa fa-google"></a>
+<a href="https://www.facebook.com/reyjum2669" class="fa fa-linkedin"></a>
+          </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
